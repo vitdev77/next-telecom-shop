@@ -1,0 +1,17 @@
+import * as React from 'react'
+
+export interface IAccordionProps {
+  children: React.ReactNode
+  title: string | React.JSX.Element
+  titleClass: string
+  rotateIconClass?: string
+}
+
+export interface IMenuLinkItemProps {
+  item: {
+    id: number
+    text: string
+    href: string
+  }
+  handleRedirectToCatalog: (arg0: string) => void
+}
